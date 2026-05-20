@@ -1,8 +1,8 @@
 from fastapi.testclient import TestClient
 
 from app.dependencies import get_agent
-from app.main import app
-from app.schemas import AgentSQLResponse
+from week2.app.main import app
+from week2.app.schemas import AgentSQLResponse
 
 
 class StubAgent:

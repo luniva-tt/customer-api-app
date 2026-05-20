@@ -2,7 +2,7 @@ import pytest
 
 from app.agent import SQLAgent
 from app.llm import DeterministicLLMProvider
-from app.schemas import Decomposition, SQLDraft, SummaryDraft
+from week2.app.schemas import Decomposition, SQLDraft, SummaryDraft
 
 
 class RepairingProvider(DeterministicLLMProvider):

@@ -4,10 +4,10 @@ from typing import Any, Literal, TypedDict
 
 from langgraph.graph import END, START, StateGraph
 
-from app.database import QueryExecutor
+from week2.app.database import QueryExecutor
 from app.llm import LLMProvider, build_llm_provider
 from app.safety import SQLValidationError, validate_select_sql
-from app.schemas import AgentSQLResponse, Decomposition
+from week2.app.schemas import AgentSQLResponse, Decomposition
 
 logger = logging.getLogger("sql_agent")
 logging.basicConfig(level=logging.INFO)

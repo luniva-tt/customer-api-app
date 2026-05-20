@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 
-from app.main import create_app
+from week2.app.main import create_app
 
 
 class FakeExecutor:

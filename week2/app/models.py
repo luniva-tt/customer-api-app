@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from app.database import Base
+from week2.app.database import Base
 
 
 class Customer(Base):

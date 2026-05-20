@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.routers import customer_router
-from app.routers import count_router
+from week2.app.routers import customer_router
+from week2.app.routers import count_router
 
 
 app = FastAPI(

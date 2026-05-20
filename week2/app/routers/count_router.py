@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 import asyncio
 import time
 
-from app.database import get_db
-from app import crud
-from app.logger import logger
+from week2.app.database import get_db
+from week2.app import crud
+from week2.app.logger import logger
 
 router = APIRouter(tags=["Counts"])
 

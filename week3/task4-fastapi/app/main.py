@@ -3,10 +3,10 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from app.agent import SQLAgent
-from app.database import QueryExecutor
+from week2.app.database import QueryExecutor
 from app.dependencies import AgentDep
 from app.llm import LLMProvider, build_llm_provider
-from app.schemas import AgentSQLRequest, AgentSQLResponse
+from week2.app.schemas import AgentSQLRequest, AgentSQLResponse
 from app.settings import Settings, get_settings
 
 

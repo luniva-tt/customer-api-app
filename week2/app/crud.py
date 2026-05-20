@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
-from app import models, schemas
-from app.logger import logger
+from week2.app import schemas
+from week2.app.logger import logger
+from week2.app import models
 
 
 def get_customers(db: Session, skip: int = 0, limit: int = 10):

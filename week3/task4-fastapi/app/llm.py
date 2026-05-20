@@ -3,7 +3,7 @@ from typing import Protocol
 
 from langchain_openai import ChatOpenAI
 
-from app.schemas import Decomposition, SQLDraft, SummaryDraft
+from week2.app.schemas import Decomposition, SQLDraft, SummaryDraft
 from app.settings import Settings
 
 
