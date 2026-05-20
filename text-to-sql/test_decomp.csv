@@ -1,0 +1,6 @@
+question,intent,tables,columns,filters,joins,aggregate,order_by,notes,error
+List all customers,retrieve,"[""customers""]","[""*""]",[],[],,[],Retrieve all customer records,
+Count customers by country,count/aggregate,"[""customers""]","[""country"", ""customerNumber""]",[],[],COUNT,[],Group by country,
+Get total revenue from payments,sum,"[""payments""]","[""amount""]",[],[],SUM,[],Calculate total revenue,
+Show employees and their office cities,retrieve,"[""employees"", ""offices""]","[""firstName"", ""lastName"", ""city""]",[],"[{""table1"": ""employees"", ""table2"": ""offices"", ""on"": ""employees.officeCode = offices.officeCode""}]",,[],Join employees with offices,
+Count total orders,count,"[""orders""]","[""orderNumber""]",[],[],COUNT,[],Total number of orders,

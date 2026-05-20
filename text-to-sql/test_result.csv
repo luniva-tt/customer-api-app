@@ -1,0 +1,14 @@
+question,status,sql,row_count,error,column_names
+List all customers,execution_failed_after_retry,SELECT * FROM users;,0,"current transaction is aborted, commands ignored until end of transaction block
+",[]
+Count customers by country,execution_failed_after_retry,"SELECT c.country, COUNT(c.customerNumber) AS customer_count FROM customers c GROUP BY c.country;",0,"current transaction is aborted, commands ignored until end of transaction block
+",[]
+Get total revenue from payments,execution_failed_after_retry,SELECT SUM(p.amount) AS total_revenue FROM payments p; ROLLBACK; SELECT SUM(p.amount) AS total_revenue FROM payments p;,0,"current transaction is aborted, commands ignored until end of transaction block
+",[]
+Show employees and their office cities,execution_failed_after_retry,"SELECT e.first_name, e.last_name, o.city 
+FROM employees e 
+INNER JOIN offices o 
+ON e.officeCode = o.officeCode;",0,"current transaction is aborted, commands ignored until end of transaction block
+",[]
+Count total orders,execution_failed_after_retry,SELECT COUNT(o.orderNumber) FROM orders o;,0,"current transaction is aborted, commands ignored until end of transaction block
+",[]
