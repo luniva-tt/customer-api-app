@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from app.routers import customer_router
 from app.routers import count_router
 
+
 app = FastAPI(
     title="Customer API"
 )
